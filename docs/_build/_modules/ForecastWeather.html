@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForecastWeather &#8212; Weather Information 1.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=1d7d6f95"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/ForecastWeather';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Weather Information 1.1 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">Weather Information</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../CurrentWeather.html">CurrentWeather module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DataIntroduction.html">DataIntroduction module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ForecastWeather.html">ForecastWeather module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Main.html">Main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MathOthers.html">MathOthers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WeatherInfoJunction.html">WeatherInfoJunction module</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for ForecastWeather</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="kn">import</span> <span class="nn">MathOthers</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This module provides functionality to retrieve weather forecasts for cities and points based on their geographical coordinates. </span>
+<span class="sd">It interacts with the OpenWeatherMap API to gather forecast data, such as rainfall, for the next 3 and 6 hours* and associates this information </span>
+<span class="sd">with cities or points generated by the &#39;MathOthers&#39; module.</span>
+
+<span class="sd">The module relies on the &#39;MathOthers&#39; module to obtain a dictionary of cities or points, then fetches weather forecast data </span>
+<span class="sd">for each location using the OpenWeatherMap API and &#39;requests&#39; package. The results are returned in a structured format (dictionary).</span>
+
+<span class="sd">Notes:</span>
+
+<span class="sd">    - Note that we are using the free subscription of the OpenWeatherMap API, which comes with certain restrictions on weather data availability.</span>
+
+<span class="sd">    *- The &quot;next 3 and 6 hours&quot; refer to specific times. </span>
+<span class="sd">    The OpenWeatherMap API only provides data for hours that are multiples of 3 and 6.</span>
+<span class="sd">        Example: </span>
+<span class="sd">            - Suppose the current time is 13:46:14. If we request rain information for the &quot;next 3 hours&quot; from the OpenWeatherMap API,</span>
+<span class="sd">            we will receive data for 15:00:00, because 15 is the next multiple of 3 after 13.</span>
+<span class="sd">        The same logic applies for the &quot;next 6 hours&quot;.</span>
+
+<span class="sd">Functions in this module:</span>
+
+<span class="sd">- &#39;forWeatherCities()&#39;: Fetches weather forecast data for cities within a specified distance from a central location.</span>
+<span class="sd">- &#39;forWeatherPoints()&#39;: Retrieves weather forecast data for specific points within a grid around a central location.</span>
+<span class="sd">- &#39;parseWeatherInfo()&#39;: Parses weather forecast data for easy consumption in the final output.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="forWeatherCities">
+<a class="viewcode-back" href="../ForecastWeather.html#ForecastWeather.forWeatherCities">[docs]</a>
+<span class="k">def</span> <span class="nf">forWeatherCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get forecasted weather in the respective cities that were returned by getCities in mathModule.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        dist (float): The distance in kilometers within which to search for cities.</span>
+<span class="sd">        lat1 (float): Latitude of the center location.</span>
+<span class="sd">        lon1 (float): Longitude of the center location.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        cities (dict): A dictionary with city names, as keys, and forecast weather information, as values, including the coordinates calculated previously.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;https://api.openweathermap.org/data/2.5/forecast&#39;</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;cd625bdba0ced920ac5b1dc2f68a634f&#39;</span>
+
+    <span class="n">cities</span> <span class="o">=</span> <span class="n">MathOthers</span><span class="o">.</span><span class="n">getCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">city</span><span class="p">,</span> <span class="n">coordinates</span> <span class="ow">in</span> <span class="n">cities</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span>
+        <span class="n">paramsAdd</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="n">lat</span><span class="p">,</span>
+            <span class="s1">&#39;lon&#39;</span><span class="p">:</span> <span class="n">lon</span><span class="p">,</span>
+            <span class="s1">&#39;appid&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">,</span>
+            <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;metric&#39;</span>
+        <span class="p">}</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">paramsAdd</span><span class="p">)</span>
+            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            <span class="n">weather_info</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+            <span class="n">cities</span><span class="p">[</span><span class="n">city</span><span class="p">][</span><span class="s1">&#39;rain_forecast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parseWeatherInfo</span><span class="p">(</span><span class="n">weather_info</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to fetch weather data for </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">cities</span></div>
+
+
+<div class="viewcode-block" id="parseWeatherInfo">
+<a class="viewcode-back" href="../ForecastWeather.html#ForecastWeather.parseWeatherInfo">[docs]</a>
+<span class="k">def</span> <span class="nf">parseWeatherInfo</span><span class="p">(</span><span class="n">weatherInfo</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Parses weather information from the API response.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        weatherInfo (dict): JSON response containing weather forecast data.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        parsed_data (dict): Parsed weather information.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">parsed_data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1"># Range(2) means that we only want the next 3 and 6 hours of forecast weather for each city</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">i</span>
+        <span class="n">rain_key</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;rain_</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s1">h&#39;</span>
+        <span class="n">percent_key</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;percent_</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s1">h&#39;</span>
+
+        <span class="n">variables</span> <span class="o">=</span> <span class="n">weatherInfo</span><span class="p">[</span><span class="s1">&#39;list&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">rain_data</span> <span class="o">=</span> <span class="n">variables</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;rain&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;3h&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+        <span class="n">parsed_data</span><span class="p">[</span><span class="n">rain_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">rain_data</span><span class="p">[</span><span class="s1">&#39;3h&#39;</span><span class="p">]</span>
+        <span class="n">parsed_data</span><span class="p">[</span><span class="n">percent_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">variables</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;pop&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">parsed_data</span></div>
+
+
+<div class="viewcode-block" id="forWeatherPoints">
+<a class="viewcode-back" href="../ForecastWeather.html#ForecastWeather.forWeatherPoints">[docs]</a>
+<span class="k">def</span> <span class="nf">forWeatherPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">,</span><span class="n">radius_point</span><span class="p">):</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get forecasted weather in the respective points that were returned by getPoints in mathModule.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        dist (float): The distance in kilometers within which to search for cities.</span>
+<span class="sd">        lat1 (float): Latitude of the center location.</span>
+<span class="sd">        lon1 (float): Longitude of the center location.</span>
+<span class="sd">        radius_point (float): distance, in kilometers, between points.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        points (dict): A dictionary with the several points, as keys, and forecast weather information, as values, including the coordinates calculated previously.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;https://api.openweathermap.org/data/2.5/forecast?&#39;</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;cd625bdba0ced920ac5b1dc2f68a634f&#39;</span>
+    
+    <span class="n">points</span> <span class="o">=</span> <span class="n">MathOthers</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">,</span><span class="n">radius_point</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">point</span><span class="p">,</span><span class="n">coordinates</span> <span class="ow">in</span> <span class="n">points</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        
+        <span class="n">lat</span><span class="p">,</span><span class="n">lon</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span>
+        
+        <span class="n">paramsAdd</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="n">lat</span><span class="p">,</span>
+            <span class="s1">&#39;lon&#39;</span><span class="p">:</span> <span class="n">lon</span><span class="p">,</span>
+            <span class="s1">&#39;appid&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">,</span>
+            <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;metric&#39;</span>
+        <span class="p">}</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">paramsAdd</span><span class="p">)</span>
+            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            <span class="n">weather_info</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+            <span class="n">points</span><span class="p">[</span><span class="n">point</span><span class="p">][</span><span class="s1">&#39;weather&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parseWeatherInfo</span><span class="p">(</span><span class="n">weather_info</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to fetch weather data for </span><span class="si">{</span><span class="n">point</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">points</span></div>
+
+</pre></div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pedro Silva
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Pedro Silva.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

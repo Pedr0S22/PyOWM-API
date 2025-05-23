@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherInfoJunction &#8212; Weather Information 1.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=1d7d6f95"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/WeatherInfoJunction';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Weather Information 1.1 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">Weather Information</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../CurrentWeather.html">CurrentWeather module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DataIntroduction.html">DataIntroduction module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ForecastWeather.html">ForecastWeather module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Main.html">Main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MathOthers.html">MathOthers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WeatherInfoJunction.html">WeatherInfoJunction module</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for WeatherInfoJunction</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">CurrentWeather</span>
+<span class="kn">import</span> <span class="nn">ForecastWeather</span>
+<span class="kn">import</span> <span class="nn">MathOthers</span>
+<span class="kn">import</span> <span class="nn">DataIntroduction</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This module provides functionality to retrieve and combine current weather and forecast weather information for cities and points </span>
+<span class="sd">based on geographical coordinates and user-defined distances. It leverages the capabilities of separate modules for current weather, </span>
+<span class="sd">forecast weather, and mathematical calculations related to geographical distances.</span>
+
+<span class="sd">Modules used:</span>
+
+<span class="sd">- &#39;CurrentWeather&#39;: Handles retrieval of current weather data.</span>
+<span class="sd">- &#39;ForecastWeather&#39;: Handles retrieval of forecast weather data.</span>
+<span class="sd">- &#39;MathOthers&#39;: Provides mathematical functions, such as distance calculations.</span>
+<span class="sd">- &#39;DataIntroduction&#39;: Manages user input and data gathering for distances and points.</span>
+
+<span class="sd">Functions in this module:</span>
+
+<span class="sd">- &#39;weatherCities()&#39;: Combines current weather and forecast information for cities within a specified distance from a given location.</span>
+<span class="sd">- &#39;weatherPoints()&#39;: Combines current weather and forecast information for points within a specified distance from a given location, </span>
+<span class="sd">considering user options.</span>
+<span class="sd">- &#39;weatherBoth()&#39;: Combines weather information for both cities and points based on user-defined criteria, </span>
+<span class="sd">including distance from specified locations.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="weatherCities">
+<a class="viewcode-back" href="../WeatherInfoJunction.html#WeatherInfoJunction.weatherCities">[docs]</a>
+<span class="k">def</span> <span class="nf">weatherCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">,</span><span class="n">option</span><span class="p">):</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Combines current weather and forecast weather informarions for cities within a specified distance.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        dist (float): The distance in kilometers within which to search for cities.</span>
+<span class="sd">        lat1 (float): Latitude of the center location.</span>
+<span class="sd">        lon1 (float): Longitude of the center location.</span>
+<span class="sd">        option (int): User&#39;s choice in the main menu</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        forecast (dict): A dictionary with city names, as keys, and current and forecast weather information combined, as values, including the coordinates calculated previously.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">option</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Please, wait for results.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="n">current</span> <span class="o">=</span> <span class="n">CurrentWeather</span><span class="o">.</span><span class="n">curWeatherCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">)</span>
+    <span class="n">forecast</span> <span class="o">=</span> <span class="n">ForecastWeather</span><span class="o">.</span><span class="n">forWeatherCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">city</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">forecast</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">forecast</span><span class="p">[</span><span class="n">city</span><span class="p">][</span><span class="s1">&#39;rain_current&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">current</span><span class="p">[</span><span class="n">city</span><span class="p">][</span><span class="s1">&#39;rain_current&#39;</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">forecast</span></div>
+
+
+<div class="viewcode-block" id="weatherPoints">
+<a class="viewcode-back" href="../WeatherInfoJunction.html#WeatherInfoJunction.weatherPoints">[docs]</a>
+<span class="k">def</span> <span class="nf">weatherPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">,</span><span class="n">option</span><span class="p">,</span><span class="n">radius_aux</span><span class="p">):</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Combines current weather and forecast weather informations for points within a specified distance.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        dist (float): The distance in kilometers within which to search for cities.</span>
+<span class="sd">        lat1 (float): Latitude of the center location.</span>
+<span class="sd">        lon1 (float): Longitude of the center location.</span>
+<span class="sd">        option (int): User&#39;s choice in the main menu.</span>
+<span class="sd">        radius_aux (float): distance, in kilometrs, between points.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        forecast (dict): A dictionary with the several points, as keys, and current and forecast weather information combined, as values, including the coordinates calculated previously.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># If the users option is &quot;weather in land/sea&quot; (3), we don&#39;t want to ask the user the radius_point twice</span>
+    <span class="c1"># We will use the radius_point calculated before in weatherCities function</span>
+    <span class="k">if</span> <span class="n">option</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">radius_point</span> <span class="o">=</span> <span class="n">radius_aux</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">radius_point</span> <span class="o">=</span> <span class="n">DataIntroduction</span><span class="o">.</span><span class="n">getDistPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+        
+        <span class="c1"># &quot;radius_point&quot; contains the last input asked to the user</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Please, wait for results.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="n">current</span> <span class="o">=</span> <span class="n">CurrentWeather</span><span class="o">.</span><span class="n">curWeatherPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">,</span><span class="n">radius_point</span><span class="p">)</span>
+    <span class="n">forecast</span> <span class="o">=</span> <span class="n">ForecastWeather</span><span class="o">.</span><span class="n">forWeatherPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span><span class="n">lat1</span><span class="p">,</span><span class="n">lon1</span><span class="p">,</span><span class="n">radius_point</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">point</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">forecast</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">forecast</span><span class="p">[</span><span class="n">point</span><span class="p">][</span><span class="s1">&#39;rain_current&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">current</span><span class="p">[</span><span class="n">point</span><span class="p">][</span><span class="s1">&#39;rain_current&#39;</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">forecast</span></div>
+
+
+<div class="viewcode-block" id="weatherBoth">
+<a class="viewcode-back" href="../WeatherInfoJunction.html#WeatherInfoJunction.weatherBoth">[docs]</a>
+<span class="k">def</span> <span class="nf">weatherBoth</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">option</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Combines weather information for both cities and points within this criteria:</span>
+<span class="sd">        On land: get weather for cities and points that are more than a certain distance* in km from cities;</span>
+<span class="sd">        At sea: get weather for points that are more than a certain distance* in km from cities.</span>
+<span class="sd">    Note:</span>
+<span class="sd">        * The distance is chosen by the user.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        dist (float): The distance in kilometers within which to search for cities and points.</span>
+<span class="sd">        lat1 (float): Latitude of the central location.</span>
+<span class="sd">        lon1 (float): Longitude of the central location.</span>
+<span class="sd">        option (int): User&#39;s choice in the main menu</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: A dictionary containing combined weather information for cities and points.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">radius_point</span> <span class="o">=</span> <span class="n">DataIntroduction</span><span class="o">.</span><span class="n">getDistPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+
+    <span class="c1"># &quot;radius_point&quot; contains the last input asked to the user</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Please, wait for results.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">weather_cities</span> <span class="o">=</span> <span class="n">weatherCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">option</span><span class="p">)</span>
+    <span class="n">weather_points</span> <span class="o">=</span> <span class="n">weatherPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">option</span><span class="p">,</span> <span class="n">radius_point</span><span class="p">)</span>
+    
+    <span class="n">cities</span> <span class="o">=</span> <span class="n">MathOthers</span><span class="o">.</span><span class="n">getCities</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">)</span>
+    <span class="n">points</span> <span class="o">=</span> <span class="n">MathOthers</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">radius_point</span><span class="p">)</span>
+    
+    <span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">pointCoords</span> <span class="o">=</span> <span class="p">[</span><span class="n">coords</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">coords</span> <span class="ow">in</span> <span class="n">points</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+    
+    <span class="k">if</span> <span class="n">weather_cities</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">cityName</span><span class="p">,</span> <span class="n">cityInfo</span> <span class="ow">in</span> <span class="n">cities</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">city_coord</span> <span class="o">=</span> <span class="n">cityInfo</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span>
+            <span class="n">distances</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="n">pointName</span><span class="p">:</span> <span class="n">MathOthers</span><span class="o">.</span><span class="n">haversineDist</span><span class="p">(</span><span class="n">city_coord</span><span class="p">,</span> <span class="n">pointInfo</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">pointName</span><span class="p">,</span> <span class="n">pointInfo</span> <span class="ow">in</span> <span class="n">points</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+            <span class="p">}</span>
+            
+            <span class="k">for</span> <span class="n">pointName</span><span class="p">,</span> <span class="n">distance</span> <span class="ow">in</span> <span class="n">distances</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">radius_point</span> <span class="ow">and</span> <span class="n">points</span><span class="p">[</span><span class="n">pointName</span><span class="p">][</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">pointCoords</span><span class="p">:</span>
+                    <span class="n">pointCoords</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">pointName</span><span class="p">][</span><span class="s1">&#39;coord&#39;</span><span class="p">])</span>
+        
+        <span class="k">if</span> <span class="n">pointCoords</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">pointName</span><span class="p">,</span> <span class="n">pointInfo</span> <span class="ow">in</span> <span class="n">weather_points</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">pointInfo</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">pointCoords</span><span class="p">:</span>
+                    <span class="n">weather_cities</span><span class="p">[</span><span class="n">pointName</span><span class="p">]</span> <span class="o">=</span> <span class="n">pointInfo</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">condition</span> <span class="o">=</span> <span class="kc">True</span>
+    
+    <span class="k">return</span> <span class="n">weather_points</span> <span class="k">if</span> <span class="n">condition</span> <span class="k">else</span> <span class="n">weather_cities</span></div>
+
+</pre></div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pedro Silva
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Pedro Silva.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

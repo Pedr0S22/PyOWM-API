@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataIntroduction &#8212; Weather Information 1.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=1d7d6f95"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/DataIntroduction';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Weather Information 1.1 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">Weather Information</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../CurrentWeather.html">CurrentWeather module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DataIntroduction.html">DataIntroduction module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ForecastWeather.html">ForecastWeather module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Main.html">Main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MathOthers.html">MathOthers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WeatherInfoJunction.html">WeatherInfoJunction module</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for DataIntroduction</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This module provides functions to gather geographical data, including distance, latitude, longitude, and city-specific coordinates,</span>
+<span class="sd">and it is used to gather information that can be passed to other functions in different modules, like Main module.</span>
+
+<span class="sd">The module interacts with users to obtain necessary inputs, validates those inputs, </span>
+<span class="sd">and uses the OpenWeatherMap API (with &#39;requests&#39; package) to convert city names and country codes into latitude and longitude coordinates.</span>
+
+<span class="sd">Functions in this module:</span>
+
+<span class="sd">- &#39;getDistance()&#39;: Asks the user for a distance, in kilometers, from a center point and ensures the value is within a specified range.</span>
+<span class="sd">- &#39;getLatitude()&#39;: Prompts the user to input a valid latitude, verifying it falls within the valid range of -90 to 90 degrees.</span>
+<span class="sd">- &#39;getLongitude()&#39;: Asks the user for a valid longitude, checking it is between -180 and 180 degrees.</span>
+<span class="sd">- &#39;dataIntroduction()&#39;: Handles user choice between entering coordinates from a point in the globe, or specifying a location </span>
+<span class="sd">   using city name and country code. It then retrieves the respective geographical data (distance, latitude, longitude).</span>
+<span class="sd">- &#39;getCityUser()&#39;: Retrieves the latitude and longitude for a user-specified city using </span>
+<span class="sd">   the OpenWeatherMap Geocoding API and validates country code input.</span>
+<span class="sd">- &#39;is_alpha_space()&#39;: Validates if a string contains only alphabetic characters and spaces.</span>
+<span class="sd">- &#39;getDistPoints()&#39;: Calculates the optimal distance between points based on the distance from the center point, </span>
+<span class="sd">   ensuring it adheres to computational and practical constraints.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="getDistance">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.getDistance">[docs]</a>
+<span class="k">def</span> <span class="nf">getDistance</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get distance, in kilometers, from the center point.</span>
+<span class="sd">    Note: c.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        none.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        dist (float): distance, in kilometers, from the center point.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dist</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Introduce the distance, in km, without metrics, from your center point. You can only input values from 10 to 500.</span><span class="se">\n</span><span class="s2">Note that the greater the distance, the longer the execution time will be:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="mi">10</span> <span class="o">&lt;=</span> <span class="n">dist</span> <span class="o">&lt;=</span> <span class="mi">500</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">dist</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. The value must be between 10 and 500, including.&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. Please enter a valid number.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="getLatitude">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.getLatitude">[docs]</a>
+<span class="k">def</span> <span class="nf">getLatitude</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get Latitude from the center point.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        none.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        lat (float): latitude of the center point.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">lat</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Introduce the latitude value of your center point: &quot;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="o">-</span><span class="mi">90</span> <span class="o">&lt;</span> <span class="n">lat</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">lat</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. The value must be between -90 and 90, exclusive.&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. Please enter a valid number.&quot;</span><span class="p">)</span></div>
+
+        
+<div class="viewcode-block" id="getLongitude">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.getLongitude">[docs]</a>
+<span class="k">def</span> <span class="nf">getLongitude</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get longitude from the center point.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        none.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        lon (float): longitude of the center point.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">lon</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce the longitude value of your center point: &quot;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="o">-</span><span class="mi">180</span> <span class="o">&lt;</span> <span class="n">lon</span> <span class="o">&lt;</span> <span class="mi">180</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">lon</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. The value must be between -180 and 180, exclusive.&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. Please enter a valid number.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="dataIntroduction">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.dataIntroduction">[docs]</a>
+<span class="k">def</span> <span class="nf">dataIntroduction</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieves the distance and coordinates of the center point.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        None.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        tuple: A tuple containing the distance (float), latitude (float), and longitude (float).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+        <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span>
+            <span class="s2">&quot;Do you prefer writing the name of the city of your center point, or the coordinates?</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+            <span class="s2">&quot;[1] - city name;</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="s2">&quot;[2] - Coordinates;</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
+                <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">getCityUser</span><span class="p">()</span>
+                <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">lat</span> <span class="o">=</span> <span class="n">getLatitude</span><span class="p">()</span>
+                <span class="n">lon</span> <span class="o">=</span> <span class="n">getLongitude</span><span class="p">()</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid choice. Please, choose a valid option.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="n">dist</span> <span class="o">=</span> <span class="n">getDistance</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="getCityUser">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.getCityUser">[docs]</a>
+<span class="k">def</span> <span class="nf">getCityUser</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieves the latitude and longitude of a city chosen by the user, along with the respective country code (ISO 3166 format).</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        None.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        lat (float): The latitude of the city chosen by the user.</span>
+<span class="sd">        lon (float): The longitude of the city chosen by the user.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;http://api.openweathermap.org/geo/1.0/direct?&#39;</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;cd625bdba0ced920ac5b1dc2f68a634f&#39;</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">city_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Enter the name of the city:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">is_alpha_space</span><span class="p">(</span><span class="n">city_name</span><span class="o">.</span><span class="n">strip</span><span class="p">()):</span>
+                    <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. The city name must contain only letters.&quot;</span><span class="p">)</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">code</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Enter the country code (ISO 3166 format):</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">code</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">code</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+                    <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Input error. Please use a valid ISO 3166 country code.&quot;</span><span class="p">)</span>
+
+            <span class="n">city_code</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">city_name</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">code</span><span class="si">}</span><span class="s1">&#39;</span>
+
+            <span class="n">paramsAdd</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="n">city_code</span><span class="p">,</span>
+                <span class="s1">&#39;appid&#39;</span><span class="p">:</span> <span class="n">api_key</span>
+            <span class="p">}</span>
+
+
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">paramsAdd</span><span class="p">)</span>
+            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            
+            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No results returned from the API.&quot;</span><span class="p">)</span>
+            
+            <span class="n">lat</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
+            <span class="n">lon</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span>
+
+            <span class="k">return</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span>
+
+        <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Error fetching data from API: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">. Try again.&quot;</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="p">(</span><span class="ne">IndexError</span><span class="p">,</span> <span class="ne">KeyError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Error fetching coordinates for </span><span class="si">{</span><span class="n">city_name</span><span class="si">}</span><span class="s2">. The city or country code might be invalid.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="is_alpha_space">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.is_alpha_space">[docs]</a>
+<span class="k">def</span> <span class="nf">is_alpha_space</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Verifies if a string contains only letters or spaces.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        str (str): The string to be verified.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if the string contains only letters and spaces, otherwise False.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">or</span> <span class="n">char</span><span class="o">.</span><span class="n">isspace</span><span class="p">()</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="getDistPoints">
+<a class="viewcode-back" href="../DataIntroduction.html#DataIntroduction.getDistPoints">[docs]</a>
+<span class="k">def</span> <span class="nf">getDistPoints</span><span class="p">(</span><span class="n">dist</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get the distance, in km, between points.</span>
+
+<span class="sd">    Notes:</span>
+<span class="sd">        - The minimum value for this distance is 10km (considering that every city is distanced by at least 10km from each other).</span>
+<span class="sd">        - This distance should be proportional to the distance from the center point, considering computational execution time.</span>
+<span class="sd">        If the distance from the center point is large, the distance between points should also be reasonably large.</span>
+<span class="sd">        The user should follow the proportion of 1/5. For example, if the distance from the center point is 200km,</span>
+<span class="sd">        the distance between points should be at least 40km.</span>
+<span class="sd">        - If the user chooses the minimum distance possible, the computational execution time could be high. The user should aim to select </span>
+<span class="sd">        the minimum possible distance from the center point and the maximum possible distance between points in order to achieve maximum efficiency.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        dist (float): Distance, in km, from the center point.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        radius (float): Distance, in km, between points.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">aux</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">dist</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">aux</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">aux</span> <span class="o">=</span> <span class="mi">10</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Considering the proportion of 1/5 between the distance from the center point and the distance between points</span><span class="se">\n</span><span class="s2">&quot;</span>
+          <span class="sa">f</span><span class="s2">&quot;and the minimum of 10km, the distance between points should be </span><span class="si">{</span><span class="n">aux</span><span class="si">}</span><span class="s2"> km or more.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">radius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the distance, in km, between points:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">radius</span> <span class="o">&gt;=</span> <span class="n">aux</span> <span class="ow">and</span> <span class="mi">10</span> <span class="o">&lt;=</span> <span class="n">radius</span> <span class="o">&lt;</span> <span class="n">dist</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">radius</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Invalid input. The distance should be greater than </span><span class="si">{</span><span class="n">aux</span><span class="si">}</span><span class="s2"> km,</span><span class="se">\n</span><span class="s2">&quot;</span>
+                      <span class="sa">f</span><span class="s2">&quot;and it should be less than the distance from the center point (</span><span class="si">{</span><span class="n">dist</span><span class="si">}</span><span class="s2"> km).</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input error. Please enter a valid number.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+</pre></div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pedro Silva
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Pedro Silva.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
