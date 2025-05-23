@@ -129,7 +129,7 @@ def getCityUser():
         lon (float): The longitude of the city chosen by the user.
     """
     base_url = 'http://api.openweathermap.org/geo/1.0/direct?'
-    api_key = 'cd625bdba0ced920ac5b1dc2f68a634f'
+    api_key = '#######################'
 
     while True:
         try:

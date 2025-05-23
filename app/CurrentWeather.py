@@ -34,7 +34,7 @@ def curWeatherCities(dist,lat1,lon1):
         cities (dict): A dictionary with city names, as keys, and current weather information, as values, including the coordinates calculated previously.
     """
     base_url = 'https://api.openweathermap.org/data/2.5/weather'
-    api_key = 'cd625bdba0ced920ac5b1dc2f68a634f'
+    api_key = '########################'
 
     cities = MathOthers.getCities(dist, lat1, lon1)
 
